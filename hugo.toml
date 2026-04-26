@@ -1,0 +1,25 @@
+baseURL = "https://blog.ranilfernando.com/"
+languageCode = "en-au"
+title = "Ranil Fernando Blog"
+theme = ""
+paginate = 6
+
+[params]
+  description = "Cybersecurity, Network Automation, AI, Cisco architectures, and technical leadership insights."
+  author = "Ranil Fernando"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About Me"
+    url = "/about/"
+    weight = 3

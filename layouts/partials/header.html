@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="/">Ranil Fernando</a>
+    <nav class="nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
