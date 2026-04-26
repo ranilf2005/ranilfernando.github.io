@@ -2,13 +2,6 @@
 title: "Operationalizing Zero Trust in Telecom Networks: A Practical Playbook for 5G, SD-WAN, and Hybrid Cloud"
 date: 2026-04-25
 draft: false
-description: "An operations-first blueprint for implementing Zero Trust across telecom, 5G, SD-WAN, MEC, and hybrid cloud environments."
-tags:
-  - Zero Trust
-  - Telecom
-  - 5G
-  - SD-WAN
-  - Hybrid Cloud
 ---
 
 Telecommunications networks are rapidly evolving through 5G disaggregation, SD-WAN overlays, cloud-native cores, mobile edge computing, and API-driven operations. These changes improve agility, but they also expand the attack surface and increase operational complexity.
