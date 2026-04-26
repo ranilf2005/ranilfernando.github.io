@@ -1,7 +1,6 @@
 baseURL = "https://blog.ranilfernando.com/"
 languageCode = "en-au"
 title = "Ranil Fernando Blog"
-theme = ""
 paginate = 6
 
 [params]
