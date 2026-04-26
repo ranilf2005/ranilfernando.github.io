@@ -22,3 +22,8 @@ paginate = 6
     name = "About Me"
     url = "/about/"
     weight = 3
+
+  [[menu.main]]
+    name = "Current"
+    url = "/current/"
+    weight = 4
