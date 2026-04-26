@@ -2,12 +2,6 @@
 title: "Before You Ship an MCP Server: A Security Framework for Agentic AI Integrations"
 date: 2026-04-25
 draft: false
-description: "A practical framework to evaluate and harden MCP servers before production."
-tags:
-  - MCP
-  - AI Security
-  - Agentic AI
-  - Cybersecurity
 ---
 
 Model Context Protocol, or MCP, is accelerating agentic AI adoption by standardizing how models connect to tools and data through MCP servers. However, building and deploying a bring-your-own MCP server can introduce enterprise risk if security is not designed from the start.
