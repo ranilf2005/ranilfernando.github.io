@@ -1,10 +1,19 @@
 <header class="site-header">
-  <div class="nav-wrap">
-    <a class="brand" href="/">Ranil Fernando</a>
-    <nav class="nav">
-      {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      {{ end }}
-    </nav>
-  </div>
+  <a class="brand" href="{{ "/" | relURL }}">
+    <span class="brand-mark">RF</span>
+    <span class="brand-text">
+      <strong>{{ .Site.Title }}</strong>
+      <small>Cybersecurity • Automation • AI</small>
+    </span>
+  </a>
+
+  <button class="nav-toggle" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">
+    ☰
+  </button>
+
+  <nav class="site-nav">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
 </header>

@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
 <body>
+  <div class="site-bg">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+  </div>
+
   {{ partial "header.html" . }}
-  <main class="container">
+
+  <main>
     {{ block "main" . }}{{ end }}
   </main>
+
   {{ partial "footer.html" . }}
+
+  <script src="{{ "js/main.js" | relURL }}"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
 <footer class="site-footer">
-  <p>© {{ now.Year }} Ranil Fernando. Built with Hugo and GitHub Pages.</p>
+  <div>
+    <strong>{{ .Site.Title }}</strong>
+    <p>Thought leadership, technical labs, and practical field experience across cybersecurity, automation, AI, and Cisco architectures.</p>
+  </div>
+  <p class="footer-copy">© {{ now.Format "2006" }} {{ .Site.Title }}. Built with Hugo and GitHub Pages.</p>
 </footer>

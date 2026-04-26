@@ -2,20 +2,20 @@
 title: "About Me"
 date: 2026-04-26
 draft: false
+description: "About Ranil Fernando"
 ---
 
-Hi, I’m **Ranil Fernando**.
+I am Ranil Fernando, a technology leader focused on cybersecurity, network automation, AI, and Cisco architectures.
 
-I’m a technology leader focused on cybersecurity, network automation, AI, Cisco architectures, and customer success. This blog is where I share practical technical content, lab guides, design patterns, and lessons learned from real-world security and networking engagements.
+This blog is where I share practical technical notes, field lessons, lab guides, architecture patterns, and thought leadership across modern network and security operations.
 
 ## Focus areas
 
-- Cybersecurity and secure network architecture
-- Cisco Secure Firewall, ISE, routing, switching, and SD-WAN
-- Network automation using Python, pyATS, Ansible, REST APIs, and CI/CD
-- AI-assisted operations, LLMs, MCP, and automation workflows
-- Technical leadership, customer outcomes, and architecture strategy
+- Cybersecurity architecture and Secure Firewall
+- Network automation with pyATS, Ansible, APIs, and CI/CD
+- AI-driven operations, MCP, and practical automation workflows
+- Customer success, technical leadership, and executive advisory
 
 ## Why this blog exists
 
-My goal is to make advanced technology topics easier to understand and easier to implement. I’ll share practical examples, diagrams, labs, and field-tested guidance that can help engineers, architects, students, and technology leaders.
+My goal is to make complex technology easier to understand, easier to implement, and easier to scale.

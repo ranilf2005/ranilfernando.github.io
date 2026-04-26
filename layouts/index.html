@@ -1,37 +1,42 @@
 {{ define "main" }}
-<section class="hero">
-  <p class="eyebrow">Cybersecurity • Network Automation • AI • Cisco Architectures</p>
-  <h1>Technical leadership, automation, and security insights.</h1>
-  <p class="hero-text">Welcome to my personal blog, where I share practical lessons, lab guides, architecture insights, and field experience across cybersecurity, Cisco technologies, automation, DevOps, and AI-driven operations.</p>
-  <div class="hero-actions">
-    <a class="button" href="/posts/">Read the Blog</a>
-    <a class="button secondary" href="/about/">About Me</a>
+<section class="hero reveal">
+  <div class="hero-content">
+    <p class="eyebrow">Personal technology blog</p>
+    <h1>Cybersecurity, Network Automation, AI, and Architecture Insights.</h1>
+    <p class="hero-text">
+      Welcome to my professional blog. I share practical lessons, technical labs, automation patterns,
+      and field experience across Cisco security, network automation, DevOps, and AI-driven operations.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="{{ "/posts/" | relURL }}">Read blog posts</a>
+      <a class="btn secondary" href="{{ "/about/" | relURL }}">About me</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <span class="card-label">Focus areas</span>
+    <ul>
+      <li>Secure Firewall and security architecture</li>
+      <li>pyATS, CI/CD, DevNet and automation</li>
+      <li>AI, MCP, AIOps and operational transformation</li>
+      <li>Customer success and executive advisory</li>
+    </ul>
   </div>
 </section>
 
-<section class="cards">
-  <article class="card">
-    <h2>Cybersecurity</h2>
-    <p>Secure Firewall, zero trust, threat detection, segmentation, compliance, and security architecture.</p>
-  </article>
-  <article class="card">
-    <h2>Automation</h2>
-    <p>pyATS, Ansible, APIs, CI/CD, GitHub Actions, and infrastructure automation.</p>
-  </article>
-  <article class="card">
-    <h2>AI for NetOps</h2>
-    <p>Practical ideas for LLMs, MCP, AI agents, and operational transformation.</p>
-  </article>
-</section>
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Latest writing</p>
+    <h2>Recent posts</h2>
+  </div>
 
-<section class="latest">
-  <h2>Latest Posts</h2>
-  <div class="post-list">
-    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
-      <article class="post-preview">
+  <div class="post-grid">
+    {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
+      <article class="post-card">
+        <p class="post-date">{{ .Date.Format "02 Jan 2006" }}</p>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p class="date">{{ .Date.Format "2 Jan 2006" }}</p>
-        <p>{{ .Summary }}</p>
+        <p>{{ with .Summary }}{{ . | plainify | truncate 140 }}{{ else }}{{ .Params.description }}{{ end }}</p>
+        <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
       </article>
     {{ end }}
   </div>

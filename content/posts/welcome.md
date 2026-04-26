@@ -1,19 +1,12 @@
 ---
-title: "Welcome to My Technical Blog"
+title: "Welcome to My Blog"
 date: 2026-04-26
 draft: false
-summary: "Introducing my personal technical blog focused on cybersecurity, automation, AI, and Cisco architecture."
+description: "Introducing my professional blog on cybersecurity, automation, AI, and architecture."
 ---
 
-Welcome to my personal technical blog.
+Welcome to my professional technology blog.
 
-This site will be used to publish practical content across cybersecurity, network automation, AI-enabled operations, Cisco architectures, and lessons learned from the field.
+I will use this space to share hands-on technical content, architecture thinking, automation examples, and practical lessons from the field.
 
-Upcoming topics will include:
-
-- Cisco Secure Firewall automation
-- pyATS and Genie validation
-- Ansible and REST API examples
-- GitHub Actions and CI/CD workflows
-- AI, LLMs, and Model Context Protocol for NetOps and SecOps
-- Architecture design patterns for real customer environments
+Topics will include Cisco Secure Firewall, pyATS, GitHub Actions, CI/CD, AI-driven operations, Model Context Protocol, and modern cybersecurity architecture.
