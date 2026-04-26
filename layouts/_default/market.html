@@ -1,0 +1,161 @@
+{{ define "main" }}
+<section class="page-hero reveal">
+  <p class="eyebrow">Market</p>
+  <h1>AI, LLMs, Skills, Agents, and MCP Trends</h1>
+  <p>
+    A practical market dashboard covering leading LLM platforms, reusable agent skills,
+    SKILL.md patterns, and Model Context Protocol adoption.
+  </p>
+</section>
+
+<section class="market-kpi-grid reveal">
+  <article class="market-kpi">
+    <span>LLM pattern</span>
+    <strong>Multi-model</strong>
+    <p>Enterprises increasingly route tasks to the right model instead of relying on one model.</p>
+  </article>
+  <article class="market-kpi">
+    <span>Agent trend</span>
+    <strong>Tool-connected</strong>
+    <p>AI value is moving from model-only chat to governed access to tools and workflows.</p>
+  </article>
+  <article class="market-kpi">
+    <span>Skills trend</span>
+    <strong>Reusable</strong>
+    <p>Skills package repeatable instructions, examples, references, and optional code.</p>
+  </article>
+  <article class="market-kpi">
+    <span>MCP trend</span>
+    <strong>Integration</strong>
+    <p>MCP is becoming a common pattern for connecting agents to tools and data.</p>
+  </article>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">LLM comparison</p>
+    <h2>Which model is best?</h2>
+  </div>
+
+  <div class="tool-table-wrap">
+    <table class="tool-table market-table">
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Best fit</th>
+          <th>Strengths</th>
+          <th>Watch-outs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>OpenAI GPT family</td>
+          <td>General reasoning, coding, office workflows, agents</td>
+          <td>Strong generalist capability, tool use, coding, broad ecosystem</td>
+          <td>Governance, cost control, and data handling must be designed carefully</td>
+        </tr>
+        <tr>
+          <td>Anthropic Claude family</td>
+          <td>Long-form analysis, safety-sensitive workflows, agentic coding</td>
+          <td>Strong writing, reasoning, long-context work, safety focus</td>
+          <td>Tool permissions and MCP server security require strong controls</td>
+        </tr>
+        <tr>
+          <td>Google Gemini family</td>
+          <td>Multimodal workflows and Google ecosystem integration</td>
+          <td>Strong multimodal direction and productivity ecosystem fit</td>
+          <td>Best value depends on existing Google stack and use case</td>
+        </tr>
+        <tr>
+          <td>Open-source / local models</td>
+          <td>Private deployments, cost control, edge use cases</td>
+          <td>Control, customisation, offline/private options</td>
+          <td>Operational overhead, model evaluation, and security patching</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Capability dashboard</p>
+    <h2>Practical comparison</h2>
+  </div>
+
+  <div class="bar-dashboard">
+    <div class="bar-row"><span>General reasoning</span><div><i style="width:92%"></i></div><strong>High</strong></div>
+    <div class="bar-row"><span>Coding and automation</span><div><i style="width:90%"></i></div><strong>High</strong></div>
+    <div class="bar-row"><span>Long context analysis</span><div><i style="width:88%"></i></div><strong>High</strong></div>
+    <div class="bar-row"><span>Multimodal workflows</span><div><i style="width:84%"></i></div><strong>High</strong></div>
+    <div class="bar-row"><span>Enterprise governance</span><div><i style="width:76%"></i></div><strong>Emerging</strong></div>
+    <div class="bar-row"><span>MCP / tool ecosystem</span><div><i style="width:82%"></i></div><strong>Fast growth</strong></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Skills and agents</p>
+    <h2>SKILL.md and reusable agent workflows</h2>
+  </div>
+
+  <div class="priority-board">
+    <div>
+      <h3>What is a Skill?</h3>
+      <p>A Skill is a reusable workflow package that tells an AI assistant how to perform a specific task consistently.</p>
+      <ul>
+        <li>Repeatable instructions</li>
+        <li>Examples and templates</li>
+        <li>Optional scripts and references</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What is SKILL.md?</h3>
+      <p>SKILL.md is the playbook file. It describes the workflow, when to use it, and how the assistant should execute the task.</p>
+      <ul>
+        <li>Markdown-based instructions</li>
+        <li>Clear trigger conditions</li>
+        <li>Step-by-step operating model</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Why it matters</h3>
+      <p>Skills reduce inconsistent prompting and help teams standardise repeatable AI-driven work.</p>
+      <ul>
+        <li>Reusable knowledge</li>
+        <li>Lower operational variance</li>
+        <li>Better governance and quality</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">MCP trend</p>
+    <h2>Model Context Protocol market direction</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item"><span class="timeline-dot"></span><div><h3>Phase 1 — Experiments</h3><p>Developers connect assistants to local tools, files, APIs, and internal scripts.</p></div></div>
+    <div class="timeline-item"><span class="timeline-dot"></span><div><h3>Phase 2 — Enterprise integration</h3><p>Teams start using MCP servers as standard connectors into tickets, cloud, security, and network systems.</p></div></div>
+    <div class="timeline-item"><span class="timeline-dot"></span><div><h3>Phase 3 — Governance</h3><p>Security teams focus on identity, authorization, least privilege, monitoring, and supply-chain controls.</p></div></div>
+    <div class="timeline-item"><span class="timeline-dot"></span><div><h3>Phase 4 — Operational AI</h3><p>MCP becomes part of a controlled agent architecture where AI can safely observe, recommend, and act.</p></div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Recommendation</p>
+    <h2>Best enterprise approach</h2>
+  </div>
+
+  <div class="hero-card market-recommendation">
+    <p>
+      The best approach is not to select a single winner model. Use a multi-model strategy:
+      select the right model for each workload, wrap it with governance, and connect it to
+      enterprise systems through controlled tools, Skills, and secure MCP servers.
+    </p>
+  </div>
+</section>
+{{ end }}

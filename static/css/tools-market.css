@@ -1,0 +1,144 @@
+/* Tools and Market page styles */
+
+.tools-dashboard {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tool-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  background: rgba(255,255,255,0.055);
+  backdrop-filter: blur(16px);
+}
+
+.tool-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.tool-table th,
+.tool-table td {
+  padding: 18px;
+  border-bottom: 1px solid var(--card-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.tool-table th {
+  color: var(--pastel-mint);
+  width: 260px;
+}
+
+.tool-table td {
+  color: var(--soft);
+}
+
+.tool-note {
+  color: var(--muted);
+  margin-top: 18px;
+}
+
+.market-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.market-kpi {
+  border: 1px solid var(--card-border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.095), rgba(255,255,255,0.045));
+  box-shadow: var(--shadow);
+  padding: 24px;
+  border-radius: 28px;
+  backdrop-filter: blur(18px);
+}
+
+.market-kpi span {
+  color: var(--pastel-mint);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.market-kpi strong {
+  display: block;
+  font-size: 2rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.market-kpi p {
+  color: var(--muted);
+}
+
+.market-table th {
+  color: var(--pastel-blue);
+}
+
+.bar-dashboard {
+  display: grid;
+  gap: 18px;
+  border: 1px solid var(--card-border);
+  background: rgba(255,255,255,0.055);
+  padding: 24px;
+  border-radius: 28px;
+  backdrop-filter: blur(16px);
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 100px;
+  gap: 16px;
+  align-items: center;
+}
+
+.bar-row span {
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.bar-row div {
+  height: 12px;
+  background: rgba(255,255,255,0.09);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-row i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-mint), var(--pastel-peach));
+  border-radius: 999px;
+}
+
+.bar-row strong {
+  color: var(--pastel-lilac);
+}
+
+.market-recommendation p {
+  font-size: 1.2rem;
+  color: var(--soft);
+}
+
+@media (max-width: 1000px) {
+  .tools-dashboard,
+  .market-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bar-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .tools-dashboard,
+  .market-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}
