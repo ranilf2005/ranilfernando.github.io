@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">{{ site.Params.tagline }}</p>
+  <h1>Practical insights for secure, automated, AI-ready infrastructure.</h1>
+  <p>{{ site.Params.description }}</p>
+  <div class="actions">
+    <a class="button" href="/posts/">Read the blog</a>
+    <a class="button secondary" href="/about/">About Ranil</a>
+  </div>
+</section>
+
+<section>
+  <h2>Latest posts</h2>
+  <div class="post-grid">
+    {{ range first 6 (where site.RegularPages "Section" "posts") }}
+    <article class="card">
+      <p class="date">{{ .Date.Format "02 Jan 2006" }}</p>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+      <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
