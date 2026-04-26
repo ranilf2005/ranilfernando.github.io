@@ -15,3 +15,15 @@ summaryLength = 25
   tagline = 'Cybersecurity • Network Automation • AI • Cisco Architecture'
   github = 'https://github.com/ranilfernando'
   linkedin = 'https://www.linkedin.com/in/ranilfernando/'
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About Me"
+    url = "/about/"
+    weight = 2
