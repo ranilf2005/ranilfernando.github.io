@@ -1,6 +1,6 @@
 ---
 title: "Before You Ship an MCP Server: A Security Framework for Agentic AI Integrations"
-date: 2026-04-27
+date: 2026-04-25
 draft: false
 description: "A practical framework to evaluate and harden MCP servers before production."
 tags:
