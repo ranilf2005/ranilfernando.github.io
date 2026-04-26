@@ -1,0 +1,121 @@
+{{ define "main" }}
+<section class="page-hero current-hero reveal">
+  <p class="eyebrow">Current focus</p>
+  <h1>{{ .Title }}</h1>
+  <p>
+    A live-style view of what I am currently working on across cybersecurity,
+    automation, AI, DevNet, and customer architecture leadership.
+  </p>
+</section>
+
+<section class="dashboard-grid reveal">
+  <article class="dashboard-card status-active">
+    <span class="status-pill">Active</span>
+    <h2>AI + Network Automation</h2>
+    <p>MCP, LLM-assisted workflows, pyATS, and natural-language network operations.</p>
+    <div class="progress-bar"><span style="width: 82%"></span></div>
+    <small>Progress: 82%</small>
+  </article>
+
+  <article class="dashboard-card status-progress">
+    <span class="status-pill">In progress</span>
+    <h2>Secure Firewall Automation</h2>
+    <p>FMC / cdFMC API automation, health checks, compliance mapping, and reporting.</p>
+    <div class="progress-bar"><span style="width: 74%"></span></div>
+    <small>Progress: 74%</small>
+  </article>
+
+  <article class="dashboard-card status-research">
+    <span class="status-pill">Research</span>
+    <h2>AIOps + MCP Security</h2>
+    <p>Exploring MCP visibility, traffic detection, IPS logic, and practical security controls.</p>
+    <div class="progress-bar"><span style="width: 58%"></span></div>
+    <small>Progress: 58%</small>
+  </article>
+
+  <article class="dashboard-card status-leadership">
+    <span class="status-pill">Leadership</span>
+    <h2>Architecture Thought Leadership</h2>
+    <p>Technical blogs, customer workshops, Cisco Live-style enablement, and field guidance.</p>
+    <div class="progress-bar"><span style="width: 90%"></span></div>
+    <small>Progress: 90%</small>
+  </article>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Timeline</p>
+    <h2>Current roadmap</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div>
+        <h3>Now</h3>
+        <p>Publishing blog foundation, landing page, About Me, Blog, and Current dashboard.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div>
+        <h3>Next</h3>
+        <p>Add technical posts for Secure Firewall automation, pyATS, GitHub Actions, and MCP.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div>
+        <h3>Upcoming</h3>
+        <p>Create downloadable lab guides, architecture diagrams, and reusable automation examples.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div>
+        <h3>Future</h3>
+        <p>Build a professional knowledge hub for security, automation, AI, and customer success insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Priority board</p>
+    <h2>What I am tracking</h2>
+  </div>
+
+  <div class="priority-board">
+    <div>
+      <h3>High priority</h3>
+      <ul>
+        <li>Publish first technical blog series</li>
+        <li>Document Secure Firewall automation workflows</li>
+        <li>Build MCP + pyATS demo content</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Medium priority</h3>
+      <ul>
+        <li>Add diagrams and architecture visuals</li>
+        <li>Create GitHub repo links for lab examples</li>
+        <li>Add professional profile and speaking highlights</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Backlog</h3>
+      <ul>
+        <li>Add newsletter option</li>
+        <li>Add search capability</li>
+        <li>Add tags and categories</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}
