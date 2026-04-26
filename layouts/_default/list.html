@@ -7,14 +7,18 @@
 
 <section class="section reveal">
   <div class="post-list">
-    {{ range .Pages }}
+    {{ range .Pages.ByDate.Reverse }}
       <article class="post-row">
         <div>
           <p class="post-date">{{ .Date.Format "02 Jan 2006" }}</p>
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <p>{{ .Summary | plainify | truncate 180 }}</p>
+          {{ with .Params.description }}
+            <p>{{ . }}</p>
+          {{ else }}
+            <p>{{ .Plain | truncate 220 }}</p>
+          {{ end }}
         </div>
-        <a class="read-more" href="{{ .RelPermalink }}">Read →</a>
+        <a class="read-more" href="{{ .RelPermalink }}">Read full post →</a>
       </article>
     {{ end }}
   </div>

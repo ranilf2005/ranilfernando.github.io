@@ -1,0 +1,56 @@
+/* Blog content visibility fix */
+
+.force-content {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: var(--soft, #e8e6df) !important;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.force-content p,
+.force-content li,
+.force-content div,
+.force-content span {
+  color: var(--soft, #e8e6df) !important;
+}
+
+.force-content h1,
+.force-content h2,
+.force-content h3,
+.force-content h4 {
+  color: var(--text, #ffffff) !important;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.force-content h2 {
+  font-size: 2rem;
+}
+
+.force-content h3 {
+  font-size: 1.45rem;
+}
+
+.force-content ul,
+.force-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.force-content blockquote {
+  border-left: 4px solid var(--pastel-mint, #bff7d3);
+  padding-left: 1rem;
+  color: var(--muted, #b9b9b4);
+}
+
+.force-content pre {
+  display: block !important;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.force-content code {
+  color: #ffffff !important;
+}
