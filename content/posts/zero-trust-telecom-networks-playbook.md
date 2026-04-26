@@ -1,6 +1,6 @@
 ---
 title: "Operationalizing Zero Trust in Telecom Networks: A Practical Playbook for 5G, SD-WAN, and Hybrid Cloud"
-date: 2026-04-27
+date: 2026-04-25
 draft: false
 description: "An operations-first blueprint for implementing Zero Trust across telecom, 5G, SD-WAN, MEC, and hybrid cloud environments."
 tags:
