@@ -19,3 +19,10 @@ This blog is where I share practical technical notes, field lessons, lab guides,
 ## Why this blog exists
 
 My goal is to make complex technology easier to understand, easier to implement, and easier to scale.
+
+## Connect with me
+
+<a href="https://www.linkedin.com/in/ranilf/" target="_blank" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;">
+  <img src="/images/linkedin.svg" width="28" height="28" alt="LinkedIn">
+  <span style="color:#b8d8ff;font-weight:600;">LinkedIn Profile</span>
+</a>
