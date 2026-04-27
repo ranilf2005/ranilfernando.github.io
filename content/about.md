@@ -22,4 +22,4 @@ My goal is to make complex technology easier to understand, easier to implement,
 
 ## Connect with me
 
-[![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/ranilf/)
+[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="28" /> LinkedIn Profile](https://www.linkedin.com/in/ranilf/)
