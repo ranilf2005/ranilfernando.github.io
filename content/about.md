@@ -32,7 +32,7 @@ My goal is to make complex technology easier to understand, easier to implement,
 
 <div class="about-photo">
 
-<img src="/images/ranil_photo.png" alt="Ranil Fernando speaking at a technical event" />
+![Ranil Fernando speaking at a technical event](/images/ranil_photo.png)
 
 </div>
 
