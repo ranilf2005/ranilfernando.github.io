@@ -22,7 +22,4 @@ My goal is to make complex technology easier to understand, easier to implement,
 
 ## Connect with me
 
-<a href="https://www.linkedin.com/in/ranilf/" target="_blank" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;">
-  <img src="/images/linkedin.svg" width="28" height="28" alt="LinkedIn">
-  <span style="color:#b8d8ff;font-weight:600;">LinkedIn Profile</span>
-</a>
+[![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/ranilf/)
