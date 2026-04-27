@@ -1,0 +1,11 @@
+{{ $id := .Get "id" }}
+{{ $url := .Get "url" }}
+{{ $title := .Get "title" | default "Watch on YouTube" }}
+
+<div class="youtube-card">
+  <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg" alt="{{ $title }}">
+    <div class="youtube-play">▶</div>
+  </a>
+  <p>{{ $title }}</p>
+</div>

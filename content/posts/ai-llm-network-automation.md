@@ -14,9 +14,11 @@ tags:
 
 ## 🎥 Watch the session
 
-[![Watch on YouTube](https://img.youtube.com/vi/M9lIB7HrzrE/hqdefault.jpg)](https://www.youtube.com/live/M9lIB7HrzrE)
-
-Click the image above to watch the full session.
+{{< youtube-card 
+id="M9lIB7HrzrE" 
+url="https://www.youtube.com/live/M9lIB7HrzrE" 
+title="AI/LLM-Driven Network Automation with Natural Language" 
+>}}
 
 ---
 
