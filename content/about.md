@@ -5,9 +5,9 @@ draft: false
 description: "About Ranil Fernando"
 ---
 
-<div style="display:flex;align-items:center;gap:40px;flex-wrap:wrap;">
+<div class="about-profile">
 
-<div style="flex:1;min-width:260px;">
+<div class="about-text">
 
 I am Ranil Fernando, a technology leader focused on cybersecurity, network automation, AI, and Cisco architectures.
 
@@ -30,12 +30,9 @@ My goal is to make complex technology easier to understand, easier to implement,
 
 </div>
 
-<div style="flex:0 0 260px;text-align:center;">
+<div class="about-photo">
 
-<img src="/images/ranil_photo.png" 
-     style="width:260px;height:260px;object-fit:cover;border-radius:20px;
-     box-shadow:0 20px 40px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);" 
-/>
+<img src="/images/ranil_photo.png" alt="Ranil Fernando speaking at a technical event" />
 
 </div>
 
