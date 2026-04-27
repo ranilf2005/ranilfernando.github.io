@@ -14,13 +14,9 @@ tags:
 
 ## 🎥 Watch the session
 
-<a href="https://www.youtube.com/live/M9lIB7HrzrE?si=ZRMh05hPLK4W2CnK" target="_blank">
-  <img src="https://img.youtube.com/vi/M9lIB7HrzrE/hqdefault.jpg" 
-       alt="AI LLM Network Automation Video"
-       style="max-width:600px;width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.4);" />
-</a>
+[![Watch on YouTube](https://img.youtube.com/vi/M9lIB7HrzrE/hqdefault.jpg)](https://www.youtube.com/live/M9lIB7HrzrE)
 
-> Click the image above to watch the full session on YouTube.
+Click the image above to watch the full session.
 
 ---
 
