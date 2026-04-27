@@ -27,3 +27,13 @@ paginate = 6
     name = "Current"
     url = "/current/"
     weight = 4
+
+  [[menu.main]]
+  name = "Tools"
+  url = "/tools/"
+  weight = 5
+
+  [[menu.main]]
+    name = "Market"
+    url = "/market/"
+    weight = 6
