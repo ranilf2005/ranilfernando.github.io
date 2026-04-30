@@ -30,10 +30,10 @@ Recognized as a **trusted advisor to executive stakeholders**, I specialize in t
 
 ## 🌏 Business Impact
 
-- Influenced large-scale enterprise and service provider transformations across **Global**
+- Influenced **large-scale enterprise, service provider, and public sector transformations** across global markets
 - Delivered significant improvements in **customer adoption, operational efficiency, and service maturity**
 - Enabled **high customer satisfaction and long-term partnerships** through trusted advisory engagement
-- Led complex multi-domain initiatives across **Telstra, NBN, Department of Defence**, and other strategic customers
+- Led complex multi-domain initiatives across **strategic enterprise, service provider, and public sector customers** worldwide
 - Reduced operational effort from **days to hours** through automation and intelligent workflows
 
 ---
