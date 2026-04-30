@@ -1,82 +1,119 @@
 {{ define "main" }}
 <section class="page-hero reveal">
   <p class="eyebrow">Tools</p>
-  <h1>Cisco Talos Live Threat Intelligence</h1>
+  <h1>Live Cyber Threat Maps</h1>
   <p>
-    Cisco Talos is one of the world's largest commercial threat intelligence teams, tracking
-    spam, malware, phishing, and email-borne attacks around the globe in real time.
+    A curated set of live, vendor-operated cyber attack maps from leading security companies.
+    Each map shows real-time attack telemetry from that vendor's global sensor network.
   </p>
   <p class="tool-note">
-    Talos blocks third-party sites from embedding their dashboards directly
-    (<code>X-Frame-Options</code>), so the live views below open in a new tab.
+    These dashboards are hosted by the respective vendors and block direct embedding for security
+    reasons (<code>X-Frame-Options</code>), so each card opens the live map in a new tab.
   </p>
 </section>
 
 <section class="section reveal">
   <div class="section-heading">
-    <p class="eyebrow">Live dashboards</p>
-    <h2>Open a Talos dashboard</h2>
+    <p class="eyebrow">Vendors</p>
+    <h2>Open a live threat map</h2>
   </div>
 
-  <div class="talos-grid">
-    <a class="talos-card" href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
-      <span class="talos-badge">Live</span>
-      <h3>Email &amp; Spam Data</h3>
-      <p>Global spam volumes, top sending countries, and email threat trends — updated continuously.</p>
-      <span class="talos-link">Open on talosintelligence.com →</span>
+  <div class="threatmap-grid">
+
+    <a class="threatmap-card" href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
+      <div class="threatmap-logo">
+        <img src="https://www.google.com/s2/favicons?domain=talosintelligence.com&sz=128"
+             alt="Cisco Talos logo" loading="lazy" />
+      </div>
+      <div class="threatmap-body">
+        <span class="threatmap-vendor">Cisco Talos</span>
+        <h3>Email &amp; Spam Data</h3>
+        <p>Global spam volumes, top sending countries, and email-borne threat trends.</p>
+        <span class="threatmap-link">talosintelligence.com →</span>
+      </div>
     </a>
 
-    <a class="talos-card" href="https://talosintelligence.com/fullpage_attack_map" target="_blank" rel="noopener noreferrer">
-      <span class="talos-badge">Live</span>
-      <h3>Talos Attack Map</h3>
-      <p>Full-screen visualization of attacks observed across Cisco's global telemetry.</p>
-      <span class="talos-link">Open on talosintelligence.com →</span>
+    <a class="threatmap-card" href="https://cybermap.kaspersky.com/" target="_blank" rel="noopener noreferrer">
+      <div class="threatmap-logo">
+        <img src="https://www.google.com/s2/favicons?domain=kaspersky.com&sz=128"
+             alt="Kaspersky logo" loading="lazy" />
+      </div>
+      <div class="threatmap-body">
+        <span class="threatmap-vendor">Kaspersky</span>
+        <h3>Cyberthreat Real-Time Map</h3>
+        <p>Interactive 3D globe visualizing live malware, web, and email threat detections.</p>
+        <span class="threatmap-link">cybermap.kaspersky.com →</span>
+      </div>
     </a>
 
-    <a class="talos-card" href="https://talosintelligence.com/reputation_center" target="_blank" rel="noopener noreferrer">
-      <span class="talos-badge">Lookup</span>
-      <h3>Talos Reputation Center</h3>
-      <p>Look up the reputation of any IP, domain, or email sender against Talos's threat data.</p>
-      <span class="talos-link">Open on talosintelligence.com →</span>
+    <a class="threatmap-card" href="https://threatmap.checkpoint.com/" target="_blank" rel="noopener noreferrer">
+      <div class="threatmap-logo">
+        <img src="https://www.google.com/s2/favicons?domain=checkpoint.com&sz=128"
+             alt="Check Point logo" loading="lazy" />
+      </div>
+      <div class="threatmap-body">
+        <span class="threatmap-vendor">Check Point</span>
+        <h3>Live Cyber Threat Map</h3>
+        <p>ThreatCloud-powered live view of attacks observed across Check Point's global sensors.</p>
+        <span class="threatmap-link">threatmap.checkpoint.com →</span>
+      </div>
     </a>
 
-    <a class="talos-card" href="https://talosintelligence.com/vulnerability_reports" target="_blank" rel="noopener noreferrer">
-      <span class="talos-badge">Research</span>
-      <h3>Vulnerability Reports</h3>
-      <p>Latest CVEs and zero-day research published by the Talos vulnerability discovery team.</p>
-      <span class="talos-link">Open on talosintelligence.com →</span>
+    <a class="threatmap-card" href="https://fortiguard.fortinet.com/threat-map" target="_blank" rel="noopener noreferrer">
+      <div class="threatmap-logo">
+        <img src="https://www.google.com/s2/favicons?domain=fortinet.com&sz=128"
+             alt="Fortinet logo" loading="lazy" />
+      </div>
+      <div class="threatmap-body">
+        <span class="threatmap-vendor">Fortinet</span>
+        <h3>FortiGuard Threat Map</h3>
+        <p>Real-time attacks detected by FortiGuard Labs across the FortiGate sensor network.</p>
+        <span class="threatmap-link">fortiguard.fortinet.com →</span>
+      </div>
     </a>
 
-    <a class="talos-card" href="https://blog.talosintelligence.com/" target="_blank" rel="noopener noreferrer">
-      <span class="talos-badge">Blog</span>
-      <h3>Talos Blog</h3>
-      <p>Threat research, incident analysis, and industry insights from Cisco Talos.</p>
-      <span class="talos-link">Open blog.talosintelligence.com →</span>
+    <a class="threatmap-card" href="https://livethreatmap.radware.com/" target="_blank" rel="noopener noreferrer">
+      <div class="threatmap-logo">
+        <img src="https://www.google.com/s2/favicons?domain=radware.com&sz=128"
+             alt="Radware logo" loading="lazy" />
+      </div>
+      <div class="threatmap-body">
+        <span class="threatmap-vendor">Radware</span>
+        <h3>Live Threat Map</h3>
+        <p>Live DDoS, intrusion, anomaly, and web-application attacks observed by Radware.</p>
+        <span class="threatmap-link">livethreatmap.radware.com →</span>
+      </div>
     </a>
 
-    <a class="talos-card primary" href="https://talosintelligence.com/" target="_blank" rel="noopener noreferrer">
-      <span class="talos-badge">Hub</span>
-      <h3>Talos Intelligence Home</h3>
-      <p>The full Talos Intelligence portal — all dashboards, lookups, and research in one place.</p>
-      <span class="talos-link">Open talosintelligence.com →</span>
+    <a class="threatmap-card" href="https://horizon.netscout.com/" target="_blank" rel="noopener noreferrer">
+      <div class="threatmap-logo">
+        <img src="https://www.google.com/s2/favicons?domain=netscout.com&sz=128"
+             alt="NETSCOUT logo" loading="lazy" />
+      </div>
+      <div class="threatmap-body">
+        <span class="threatmap-vendor">NETSCOUT</span>
+        <h3>Cyber Threat Horizon</h3>
+        <p>Global DDoS attack visibility powered by NETSCOUT's ATLAS Intelligence platform.</p>
+        <span class="threatmap-link">horizon.netscout.com →</span>
+      </div>
     </a>
+
   </div>
 </section>
 
 <style>
-  .talos-grid {
+  .threatmap-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.25rem;
     margin-top: 1rem;
   }
 
-  .talos-card {
-    position: relative;
+  .threatmap-card {
     display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    padding: 1.5rem 1.4rem 1.6rem;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1.25rem 1.25rem 1.3rem;
     border-radius: 14px;
     background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -86,48 +123,68 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
   }
 
-  .talos-card:hover {
+  .threatmap-card:hover {
     transform: translateY(-3px);
     border-color: rgba(0, 191, 255, 0.45);
     background: linear-gradient(145deg, rgba(0, 191, 255, 0.08), rgba(255,255,255,0.02));
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
   }
 
-  .talos-card.primary {
-    border-color: rgba(0, 191, 255, 0.35);
-    background: linear-gradient(145deg, rgba(0, 191, 255, 0.10), rgba(255,255,255,0.02));
+  .threatmap-logo {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
   }
 
-  .talos-card h3 {
+  .threatmap-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .threatmap-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .threatmap-vendor {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  .threatmap-card h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
   }
 
-  .talos-card p {
+  .threatmap-card p {
     margin: 0;
     opacity: 0.85;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     line-height: 1.5;
   }
 
-  .talos-badge {
-    align-self: flex-start;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 0.25rem 0.55rem;
-    border-radius: 999px;
-    background: rgba(0, 191, 255, 0.15);
-    color: #5cd2ff;
-    border: 1px solid rgba(0, 191, 255, 0.35);
-  }
-
-  .talos-link {
+  .threatmap-link {
     margin-top: auto;
-    padding-top: 0.6rem;
-    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    font-size: 0.88rem;
     font-weight: 600;
     color: #5cd2ff;
+    word-break: break-all;
   }
 
   .tool-note {
@@ -141,6 +198,16 @@
     padding: 0.1rem 0.35rem;
     border-radius: 4px;
     font-size: 0.85rem;
+  }
+
+  @media (max-width: 480px) {
+    .threatmap-card {
+      flex-direction: column;
+    }
+    .threatmap-logo {
+      width: 56px;
+      height: 56px;
+    }
   }
 </style>
 {{ end }}
