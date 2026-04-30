@@ -9,8 +9,6 @@ description: "About Ranil Fernando — Senior Technical Leader and Principal Arc
 
 <div class="about-text">
 
-# 👤 About Me
-
 ## 🚀 Executive Profile
 
 Senior Technical Leader and Principal Architect–level professional with **20+ years of experience** delivering **business-aligned technology solutions** across Security, Networking, Cloud, Automation, and AI.
@@ -32,7 +30,7 @@ Recognized as a **trusted advisor to executive stakeholders**, I specialize in t
 
 ## 🌏 Business Impact
 
-- Influenced large-scale enterprise and service provider transformations across **APJC**
+- Influenced large-scale enterprise and service provider transformations across **Global**
 - Delivered significant improvements in **customer adoption, operational efficiency, and service maturity**
 - Enabled **high customer satisfaction and long-term partnerships** through trusted advisory engagement
 - Led complex multi-domain initiatives across **Telstra, NBN, Department of Defence**, and other strategic customers
@@ -51,7 +49,7 @@ Recognized as a **trusted advisor to executive stakeholders**, I specialize in t
 
 ### 🤖 Automation & DevNet
 
-- Python, pyATS / Genie, REST APIs
+- AI/LLMs, MCP, SKILL, Agent, Python, pyATS / Genie, REST APIs
 - Ansible, Terraform, CI/CD (GitLab, Docker)
 - Infrastructure as Code (IaC) and workflow orchestration
 
