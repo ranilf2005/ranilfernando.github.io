@@ -1,62 +1,72 @@
 {{ define "main" }}
 <section class="page-hero reveal">
   <p class="eyebrow">Tools</p>
-  <h1>Visitor Network Intelligence</h1>
+  <h1>Live Cisco Talos Threat Intelligence</h1>
   <p>
-    A lightweight dashboard showing public network details for the current website visitor.
-    This uses a public IP lookup API from the browser and does not store data on this site.
+    A live view of Cisco Talos Email &amp; Spam Data — one of the world's largest commercial
+    threat intelligence feeds, tracking spam, malware, and email-borne attacks in real time.
   </p>
-</section>
-
-<section class="dashboard-grid tools-dashboard reveal">
-  <article class="dashboard-card">
-    <span class="status-pill">Public IP</span>
-    <h2 id="visitor-ip">Loading...</h2>
-    <p>Your public internet-facing IP address.</p>
-  </article>
-
-  <article class="dashboard-card">
-    <span class="status-pill">Location</span>
-    <h2 id="visitor-country">Loading...</h2>
-    <p id="visitor-city">Resolving approximate location...</p>
-  </article>
-
-  <article class="dashboard-card">
-    <span class="status-pill">Network</span>
-    <h2 id="visitor-org">Loading...</h2>
-    <p id="visitor-asn">Resolving ASN details...</p>
-  </article>
-
-  <article class="dashboard-card">
-    <span class="status-pill">Browser</span>
-    <h2 id="visitor-browser">Detected</h2>
-    <p id="visitor-agent">Loading browser details...</p>
-  </article>
+  <p>
+    Source:
+    <a href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
+      talosintelligence.com/ebc_spam
+    </a>
+  </p>
 </section>
 
 <section class="section reveal">
-  <div class="section-heading">
-    <p class="eyebrow">Connection summary</p>
-    <h2>Network details</h2>
-  </div>
-
-  <div class="tool-table-wrap">
-    <table class="tool-table">
-      <tbody>
-        <tr><th>IP Address</th><td id="table-ip">Loading...</td></tr>
-        <tr><th>Country</th><td id="table-country">Loading...</td></tr>
-        <tr><th>Region</th><td id="table-region">Loading...</td></tr>
-        <tr><th>City</th><td id="table-city">Loading...</td></tr>
-        <tr><th>Timezone</th><td id="table-timezone">Loading...</td></tr>
-        <tr><th>ISP / Organisation</th><td id="table-org">Loading...</td></tr>
-        <tr><th>ASN</th><td id="table-asn">Loading...</td></tr>
-        <tr><th>Browser language</th><td id="table-language">Loading...</td></tr>
-      </tbody>
-    </table>
+  <div class="talos-embed-wrap">
+    <iframe
+      src="https://talosintelligence.com/ebc_spam"
+      title="Cisco Talos Email and Spam Data"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allow="fullscreen"
+      class="talos-embed"
+    ></iframe>
   </div>
 
   <p class="tool-note">
-    Note: IP geolocation is approximate. VPNs, corporate proxies, mobile networks, and cloud security gateways can change the visible country, city, or ISP.
+    Note: This dashboard is hosted by Cisco Talos and embedded here for convenience.
+    If the embed does not load (some browsers or networks block third-party frames),
+    open it directly:
+    <a href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
+      View on Talos Intelligence
+    </a>.
   </p>
 </section>
+
+<style>
+  .talos-embed-wrap {
+    position: relative;
+    width: 100%;
+    background: #0b0f17;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  .talos-embed {
+    display: block;
+    width: 100%;
+    height: 85vh;
+    min-height: 700px;
+    border: 0;
+    background: #0b0f17;
+  }
+
+  @media (max-width: 768px) {
+    .talos-embed {
+      height: 75vh;
+      min-height: 560px;
+    }
+  }
+
+  .tool-note {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+</style>
 {{ end }}
