@@ -1,6 +1,6 @@
 ---
 title: "Journey to Becoming an Ethical Hacker and Penetration Tester"
-date: 2024-03-17
+date: 2023-07-17
 draft: false
 description: "A practical roadmap to becoming an ethical hacker, covering fundamentals, tools, certifications, and real-world skills."
 tags:

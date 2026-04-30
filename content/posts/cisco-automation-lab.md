@@ -1,6 +1,6 @@
 ---
 title: "Building a Practical Cisco Automation Lab"
-date: 2026-04-26
+date: 2025-09-26
 draft: false
 summary: "A practical starting point for building a Cisco automation lab using Git, APIs, pyATS, Ansible, and CI/CD."
 ---

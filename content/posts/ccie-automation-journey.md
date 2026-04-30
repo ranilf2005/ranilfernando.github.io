@@ -1,6 +1,6 @@
 ---
 title: "CCIE Automation Journey – A Comprehensive Guide"
-date: 2026-04-27
+date: 2024-11-29
 draft: false
 description: "A strategic roadmap to achieving CCIE Automation, covering exam structure, preparation strategy, tools, and real-world experience."
 tags:

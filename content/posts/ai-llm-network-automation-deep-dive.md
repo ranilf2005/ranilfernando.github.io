@@ -1,6 +1,6 @@
 ---
 title: "AI/LLM-Driven Network Automation with Natural Language (Deep Dive)"
-date: 2026-04-27
+date: 2025-11-27
 draft: false
 description: "From Copilot chat to real Cisco devices using MCP, pyATS, and CML — a practical architecture and lab guide."
 tags:
