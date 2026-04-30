@@ -1,72 +1,146 @@
 {{ define "main" }}
 <section class="page-hero reveal">
   <p class="eyebrow">Tools</p>
-  <h1>Live Cisco Talos Threat Intelligence</h1>
+  <h1>Cisco Talos Live Threat Intelligence</h1>
   <p>
-    A live view of Cisco Talos Email &amp; Spam Data — one of the world's largest commercial
-    threat intelligence feeds, tracking spam, malware, and email-borne attacks in real time.
+    Cisco Talos is one of the world's largest commercial threat intelligence teams, tracking
+    spam, malware, phishing, and email-borne attacks around the globe in real time.
   </p>
-  <p>
-    Source:
-    <a href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
-      talosintelligence.com/ebc_spam
-    </a>
+  <p class="tool-note">
+    Talos blocks third-party sites from embedding their dashboards directly
+    (<code>X-Frame-Options</code>), so the live views below open in a new tab.
   </p>
 </section>
 
 <section class="section reveal">
-  <div class="talos-embed-wrap">
-    <iframe
-      src="https://talosintelligence.com/ebc_spam"
-      title="Cisco Talos Email and Spam Data"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      allow="fullscreen"
-      class="talos-embed"
-    ></iframe>
+  <div class="section-heading">
+    <p class="eyebrow">Live dashboards</p>
+    <h2>Open a Talos dashboard</h2>
   </div>
 
-  <p class="tool-note">
-    Note: This dashboard is hosted by Cisco Talos and embedded here for convenience.
-    If the embed does not load (some browsers or networks block third-party frames),
-    open it directly:
-    <a href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
-      View on Talos Intelligence
-    </a>.
-  </p>
+  <div class="talos-grid">
+    <a class="talos-card" href="https://talosintelligence.com/ebc_spam" target="_blank" rel="noopener noreferrer">
+      <span class="talos-badge">Live</span>
+      <h3>Email &amp; Spam Data</h3>
+      <p>Global spam volumes, top sending countries, and email threat trends — updated continuously.</p>
+      <span class="talos-link">Open on talosintelligence.com →</span>
+    </a>
+
+    <a class="talos-card" href="https://talosintelligence.com/fullpage_attack_map" target="_blank" rel="noopener noreferrer">
+      <span class="talos-badge">Live</span>
+      <h3>Talos Attack Map</h3>
+      <p>Full-screen visualization of attacks observed across Cisco's global telemetry.</p>
+      <span class="talos-link">Open on talosintelligence.com →</span>
+    </a>
+
+    <a class="talos-card" href="https://talosintelligence.com/reputation_center" target="_blank" rel="noopener noreferrer">
+      <span class="talos-badge">Lookup</span>
+      <h3>Talos Reputation Center</h3>
+      <p>Look up the reputation of any IP, domain, or email sender against Talos's threat data.</p>
+      <span class="talos-link">Open on talosintelligence.com →</span>
+    </a>
+
+    <a class="talos-card" href="https://talosintelligence.com/vulnerability_reports" target="_blank" rel="noopener noreferrer">
+      <span class="talos-badge">Research</span>
+      <h3>Vulnerability Reports</h3>
+      <p>Latest CVEs and zero-day research published by the Talos vulnerability discovery team.</p>
+      <span class="talos-link">Open on talosintelligence.com →</span>
+    </a>
+
+    <a class="talos-card" href="https://blog.talosintelligence.com/" target="_blank" rel="noopener noreferrer">
+      <span class="talos-badge">Blog</span>
+      <h3>Talos Blog</h3>
+      <p>Threat research, incident analysis, and industry insights from Cisco Talos.</p>
+      <span class="talos-link">Open blog.talosintelligence.com →</span>
+    </a>
+
+    <a class="talos-card primary" href="https://talosintelligence.com/" target="_blank" rel="noopener noreferrer">
+      <span class="talos-badge">Hub</span>
+      <h3>Talos Intelligence Home</h3>
+      <p>The full Talos Intelligence portal — all dashboards, lookups, and research in one place.</p>
+      <span class="talos-link">Open talosintelligence.com →</span>
+    </a>
+  </div>
 </section>
 
 <style>
-  .talos-embed-wrap {
+  .talos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .talos-card {
     position: relative;
-    width: 100%;
-    background: #0b0f17;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.5rem 1.4rem 1.6rem;
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
   }
 
-  .talos-embed {
-    display: block;
-    width: 100%;
-    height: 85vh;
-    min-height: 700px;
-    border: 0;
-    background: #0b0f17;
+  .talos-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 191, 255, 0.45);
+    background: linear-gradient(145deg, rgba(0, 191, 255, 0.08), rgba(255,255,255,0.02));
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
   }
 
-  @media (max-width: 768px) {
-    .talos-embed {
-      height: 75vh;
-      min-height: 560px;
-    }
+  .talos-card.primary {
+    border-color: rgba(0, 191, 255, 0.35);
+    background: linear-gradient(145deg, rgba(0, 191, 255, 0.10), rgba(255,255,255,0.02));
+  }
+
+  .talos-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .talos-card p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .talos-badge {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(0, 191, 255, 0.15);
+    color: #5cd2ff;
+    border: 1px solid rgba(0, 191, 255, 0.35);
+  }
+
+  .talos-link {
+    margin-top: auto;
+    padding-top: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #5cd2ff;
   }
 
   .tool-note {
     margin-top: 1rem;
     font-size: 0.95rem;
     opacity: 0.85;
+  }
+
+  .tool-note code {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
   }
 </style>
 {{ end }}
